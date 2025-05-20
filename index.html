@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="page_wrapper">
+      <div class="animals_form">
+        <h2>Insert Animal Data</h2>
+        <div class="full_row">
+          <label for="animals">Animal Type</label>
+          <select name="animals" id="animals">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Zebra">Zebra</option>
+            <option value="Elephant">Elephant</option>
+            <option value="Tiger">Tiger</option>
+          </select>
+        </div>
+        <div class="full_row">
+          <label for="animal_age">Animal Age</label>
+          <input id="animal_age" type="text" placeholder="Animal Age" />
+        </div>
+        <button id="animal_btn">Submit</button>
+        <button id="show_animals">Show All Data</button>
+      </div>
+      <div class="employees_form">
+        <h2>Insert Employee Data</h2>
+        <div class="full_row">
+          <label for="absent_or_present">Is Employees at Zoo?</label>
+          <select name="employee" id="absent_or_present">
+            <option value="" disabled selected>Select an option</option>
+            <option value="Yes">Yes</option>
+            <option value="No">No</option>
+          </select>
+        </div>
+        <div class="full_row">
+          <label for="safety_training">Safety Training Completion Date</label>
+          <input type="date" id="safety_training" />
+        </div>
+        <button id="employee_btn">Submit</button>
+        <button id="show_employees">Show All Data</button>
+      </div>
+    </div>
+    <script src="./public/zoo.js"></script>
+  </body>
+</html>
